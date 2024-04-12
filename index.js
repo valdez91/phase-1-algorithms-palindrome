@@ -1,14 +1,13 @@
+ change=(word) =>{
+  return word.split('').reverse().join('')
+}
 function isPalindrome(word) {
-  // Write your algorithm here
+  const changeWord = change(word);
+
+  return word === changeWord;
 }
 
-/* 
-  Add your pseudocode here
-*/
 
-/*
-  Add written explanation of your solution here
-*/
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
@@ -23,3 +22,5 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
